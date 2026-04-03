@@ -67,10 +67,11 @@ const FAQItem = ({ q, a, isLast, key }: { q: string, a: string, isLast?: boolean
 const BeginnerContent = () => (
   <div className="space-y-24">
     {/* Detailed Japanese Content */}
-    <div className="grid md:grid-cols-2 gap-x-16 gap-y-24">
-      <div className="space-y-6">
-        <span className="text-gold font-serif text-3xl block mb-4">01</span>
-        <h3 className="text-xl font-serif text-primary leading-relaxed">
+    <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+      <div className="bg-white border border-gold/20 p-8 md:p-10 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
+        <div className="absolute top-0 right-0 w-24 h-24 bg-gold/5 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+        <span className="text-gold font-serif text-4xl block mb-6 opacity-80 border-b-2 border-gold/30 pb-2 inline-block">01</span>
+        <h3 className="text-xl md:text-2xl font-serif text-primary leading-relaxed mb-6">
           「今週もまた、ヒアルロン酸の注射ですか？」
         </h3>
         <p className="text-base text-text-main leading-loose">
@@ -78,9 +79,10 @@ const BeginnerContent = () => (
         </p>
       </div>
 
-      <div className="space-y-6">
-        <span className="text-gold font-serif text-3xl block mb-4">02</span>
-        <h3 className="text-xl font-serif text-primary leading-relaxed">
+      <div className="bg-white border border-gold/20 p-8 md:p-10 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
+        <div className="absolute top-0 right-0 w-24 h-24 bg-gold/5 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+        <span className="text-gold font-serif text-4xl block mb-6 opacity-80 border-b-2 border-gold/30 pb-2 inline-block">02</span>
+        <h3 className="text-xl md:text-2xl font-serif text-primary leading-relaxed mb-6">
           「手術」か「我慢」か。<br/>その2択を終わらせる第3の選択肢【再生医療】。
         </h3>
         <p className="text-base text-text-main leading-loose">
@@ -88,9 +90,10 @@ const BeginnerContent = () => (
         </p>
       </div>
 
-      <div className="space-y-6">
-        <span className="text-gold font-serif text-3xl block mb-4">03</span>
-        <h3 className="text-xl font-serif text-primary leading-relaxed">
+      <div className="bg-white border border-gold/20 p-8 md:p-10 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
+        <div className="absolute top-0 right-0 w-24 h-24 bg-gold/5 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+        <span className="text-gold font-serif text-4xl block mb-6 opacity-80 border-b-2 border-gold/30 pb-2 inline-block">03</span>
+        <h3 className="text-xl md:text-2xl font-serif text-primary leading-relaxed mb-6">
           ちょっと待って！<br/>「ただ幹細胞での治療を行うだけ」では、費用が無駄になるかもしれません。
         </h3>
         <p className="text-base text-text-main leading-loose">
@@ -98,9 +101,10 @@ const BeginnerContent = () => (
         </p>
       </div>
 
-      <div className="space-y-6">
-        <span className="text-gold font-serif text-3xl block mb-4">04</span>
-        <h3 className="text-xl font-serif text-primary leading-relaxed">
+      <div className="bg-white border border-gold/20 p-8 md:p-10 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
+        <div className="absolute top-0 right-0 w-24 h-24 bg-gold/5 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+        <span className="text-gold font-serif text-4xl block mb-6 opacity-80 border-b-2 border-gold/30 pb-2 inline-block">04</span>
+        <h3 className="text-xl md:text-2xl font-serif text-primary leading-relaxed mb-6">
           幹細胞での治療と同時に、膝の「土壌」と「天然サポーター」を復活させる。
         </h3>
         <p className="text-base text-text-main leading-loose">
@@ -108,11 +112,11 @@ const BeginnerContent = () => (
         </p>
       </div>
 
-      <div className="md:col-span-2 space-y-8 pt-12 border-t border-border-light text-center max-w-3xl mx-auto">
-        <h3 className="text-2xl font-serif text-primary leading-relaxed">
+      <div className="md:col-span-2 space-y-8 pt-16 border-t border-border-light text-center max-w-4xl mx-auto">
+        <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-[#c5a059] via-[#e8c878] to-[#c5a059] leading-relaxed py-2">
           「最高の土壌」に「最高の種」を。<br/>一生、自分の足で歩くための究極のプログラム
         </h3>
-        <p className="text-base text-text-main leading-loose">
+        <p className="text-base md:text-lg text-text-main leading-loose">
           痛みを抑え、土台を整える「Dr.リバイブ」。すり減った組織を修復する「再生医療（幹細胞治療）」。これらを組み合わせた総合治療が、全国でも当院だけで受けられる『切らない膝治療の最新かつ最終かつ最高の到達地点』です。
         </p>
         <div className="pt-8">
@@ -127,10 +131,11 @@ const BeginnerContent = () => (
 const ExperiencedContent = () => (
   <div className="space-y-24">
     {/* Detailed Japanese Content */}
-    <div className="grid md:grid-cols-2 gap-x-16 gap-y-24">
-      <div className="space-y-6">
-        <span className="text-gold font-serif text-3xl block mb-4">01</span>
-        <h3 className="text-xl font-serif text-primary leading-relaxed">
+    <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+      <div className="bg-white border border-gold/20 p-8 md:p-10 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
+        <div className="absolute top-0 right-0 w-24 h-24 bg-gold/5 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+        <span className="text-gold font-serif text-4xl block mb-6 opacity-80 border-b-2 border-gold/30 pb-2 inline-block">01</span>
+        <h3 className="text-xl md:text-2xl font-serif text-primary leading-relaxed mb-6">
           PRP療法が「期待外れ」に終わってしまった理由。
         </h3>
         <p className="text-base text-text-main leading-loose">
@@ -138,9 +143,10 @@ const ExperiencedContent = () => (
         </p>
       </div>
 
-      <div className="space-y-6">
-        <span className="text-gold font-serif text-3xl block mb-4">02</span>
-        <h3 className="text-xl font-serif text-primary leading-relaxed">
+      <div className="bg-white border border-gold/20 p-8 md:p-10 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
+        <div className="absolute top-0 right-0 w-24 h-24 bg-gold/5 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+        <span className="text-gold font-serif text-4xl block mb-6 opacity-80 border-b-2 border-gold/30 pb-2 inline-block">02</span>
+        <h3 className="text-xl md:text-2xl font-serif text-primary leading-relaxed mb-6">
           貴重な「種」を、痩せた「土壌」に撒いていませんか？
         </h3>
         <p className="text-base text-text-main leading-loose">
@@ -148,9 +154,10 @@ const ExperiencedContent = () => (
         </p>
       </div>
 
-      <div className="space-y-6">
-        <span className="text-gold font-serif text-3xl block mb-4">03</span>
-        <h3 className="text-xl font-serif text-primary leading-relaxed">
+      <div className="bg-white border border-gold/20 p-8 md:p-10 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
+        <div className="absolute top-0 right-0 w-24 h-24 bg-gold/5 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+        <span className="text-gold font-serif text-4xl block mb-6 opacity-80 border-b-2 border-gold/30 pb-2 inline-block">03</span>
+        <h3 className="text-xl md:text-2xl font-serif text-primary leading-relaxed mb-6">
           高周波と栄養で、膝の「エネルギー工場」を再起動する。
         </h3>
         <p className="text-base text-text-main leading-loose">
@@ -158,9 +165,10 @@ const ExperiencedContent = () => (
         </p>
       </div>
 
-      <div className="space-y-6">
-        <span className="text-gold font-serif text-3xl block mb-4">04</span>
-        <h3 className="text-xl font-serif text-primary leading-relaxed">
+      <div className="bg-white border border-gold/20 p-8 md:p-10 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden group">
+        <div className="absolute top-0 right-0 w-24 h-24 bg-gold/5 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+        <span className="text-gold font-serif text-4xl block mb-6 opacity-80 border-b-2 border-gold/30 pb-2 inline-block">04</span>
+        <h3 className="text-xl md:text-2xl font-serif text-primary leading-relaxed mb-6">
           膝を守る「天然のサポーター（筋肉）」を呼び覚ます。
         </h3>
         <p className="text-base text-text-main leading-loose">
@@ -168,11 +176,11 @@ const ExperiencedContent = () => (
         </p>
       </div>
 
-      <div className="md:col-span-2 space-y-8 pt-12 border-t border-border-light text-center max-w-3xl mx-auto">
-        <h3 className="text-2xl font-serif text-primary leading-relaxed">
+      <div className="md:col-span-2 space-y-8 pt-16 border-t border-border-light text-center max-w-4xl mx-auto">
+        <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-[#c5a059] via-[#e8c878] to-[#c5a059] leading-relaxed py-2">
           最高の状態で再生医療へ進むために。
         </h3>
-        <p className="text-base text-text-main leading-loose">
+        <p className="text-base md:text-lg text-text-main leading-loose">
           過去の治療で効果を感じられなかった方こそ、土壌を整える「Dr.リバイブ」と「幹細胞治療」の統合的アプローチが必要です。
         </p>
         <div className="pt-8">
@@ -379,7 +387,7 @@ export default function App() {
           <div className="max-w-4xl mx-auto text-center relative">
             <div className="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent transform -skew-y-2 z-0"></div>
             <div className="relative z-10 bg-white/80 backdrop-blur-sm border border-gold/30 p-10 md:p-16 shadow-2xl">
-              <h3 className="text-2xl md:text-3xl font-serif text-primary mb-8 flex items-center justify-center gap-4">
+              <h3 className="text-2xl md:text-3xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-[#c5a059] via-[#e8c878] to-[#c5a059] mb-8 flex items-center justify-center gap-4">
                 <span className="w-12 h-px bg-gold hidden md:block"></span>
                 統合的アプローチが生む圧倒的な納得感
                 <span className="w-12 h-px bg-gold hidden md:block"></span>
