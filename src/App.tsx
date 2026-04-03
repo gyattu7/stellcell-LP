@@ -22,9 +22,9 @@ const SectionHeading = ({ title, subtitle, className }: { title: string, subtitl
 const CTAButton = ({ className, text = "無料相談・初回検査のご予約" }: { className?: string, text?: string }) => (
   <motion.a
     href="#"
-    whileHover={{ backgroundColor: 'var(--color-gold-hover)' }}
+    whileHover={{ scale: 1.02, opacity: 0.95 }}
     className={cn(
-      "inline-flex items-center justify-center bg-gold text-white py-4 px-10 text-xs md:text-sm tracking-[0.15em] transition-colors duration-300",
+      "inline-flex items-center justify-center bg-gradient-to-r from-[#c5a059] via-[#e8c878] to-[#c5a059] text-white py-4 px-10 text-xs md:text-sm tracking-[0.15em] transition-all duration-300 shadow-lg hover:shadow-xl font-medium",
       className
     )}
   >
@@ -206,12 +206,12 @@ export default function App() {
         scrolled ? "bg-bg-white/95 backdrop-blur-md border-b border-border-light py-4" : "bg-transparent py-6"
       )}>
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between">
-          <a href="#" className="font-serif text-lg md:text-xl tracking-widest text-primary">
-            ゲートウェイクリニック大阪梅田
+          <a href="#" className="flex-shrink-0">
+            <img src="https://www.gateway-clinic.com/wp/wp-content/webp-express/webp-images/themes/original_theme/assets/img/common/logo.png.webp" alt="ゲートウェイクリニック大阪梅田" className="h-10 md:h-12 object-contain" />
           </a>
           
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
             {[
               { name: "幹細胞治療について", href: "#stemcell" },
               { name: "当院について", href: "#about" },
@@ -221,15 +221,11 @@ export default function App() {
               { name: "医師紹介", href: "#doctor" },
               { name: "アクセス", href: "#access" },
             ].map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-serif tracking-widest text-text-main hover:text-primary transition-colors font-medium">
+              <a key={item.name} href={item.href} className="text-sm font-serif tracking-widest text-text-main hover:text-primary transition-colors font-medium whitespace-nowrap">
                 {item.name}
               </a>
             ))}
           </nav>
-
-          <div className="hidden lg:block">
-             <CTAButton text="無料相談・初回検査のご予約" className="py-3 px-6 text-xs" />
-          </div>
 
           {/* Mobile Menu Toggle */}
           <button className="lg:hidden p-2 text-primary" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -300,7 +296,6 @@ export default function App() {
             </h1>
             <p className="text-base md:text-lg text-text-main font-sans leading-loose mb-12 max-w-2xl">
               過去の治療で効果を感じられなかった方へ贈る、細胞の再起動という新常識。<br /><br />
-              血管・加齢医学のスペシャリスト 寳學英隆院長による「正確な診断」。<br />
               次世代の統合型再生医療「Dr.リバイブ」×「幹細胞治療」で、あなたの膝を根本から再起動する。
             </p>
             <CTAButton />
@@ -322,7 +317,7 @@ export default function App() {
             <div className="lg:col-span-6">
               <div className="aspect-[4/3] bg-white p-4 shadow-2xl">
                 <img 
-                  src="https://picsum.photos/seed/stemcell-medical/800/600" 
+                  src="https://picsum.photos/seed/blue-cell-biology/800/600" 
                   alt="Stem cell therapy" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -342,7 +337,7 @@ export default function App() {
             <div className="lg:col-span-6 lg:order-1">
               <div className="aspect-[4/3] bg-white p-4 shadow-2xl">
                 <img 
-                  src="https://picsum.photos/seed/soil-concept/800/600" 
+                  src="https://picsum.photos/seed/professional-clinic-hospital/800/600" 
                   alt="Soil concept" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -372,7 +367,7 @@ export default function App() {
             <div className="lg:col-span-6">
               <div className="aspect-[4/3] bg-white p-4 shadow-2xl">
                 <img 
-                  src="https://picsum.photos/seed/medical-device/800/600" 
+                  src="https://picsum.photos/seed/cell-repair-moving/800/600" 
                   alt="Medical device" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -381,11 +376,19 @@ export default function App() {
             </div>
           </div>
 
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-serif text-primary mb-6">統合的アプローチが生む圧倒的な納得感</h3>
-            <p className="text-base text-text-main leading-loose">
-              「Dr.リバイブ」で膝を温かく、栄養に満ちたフカフカの土壌へとリバイブさせ、そこに「高品質な幹細胞」を届ける。「内科的アプローチ」×「再生医療」の融合こそが、痛みの根本改善へと導く当院独自のメソッドです。
-            </p>
+          <div className="max-w-4xl mx-auto text-center relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent transform -skew-y-2 z-0"></div>
+            <div className="relative z-10 bg-white/80 backdrop-blur-sm border border-gold/30 p-10 md:p-16 shadow-2xl">
+              <h3 className="text-2xl md:text-3xl font-serif text-primary mb-8 flex items-center justify-center gap-4">
+                <span className="w-12 h-px bg-gold hidden md:block"></span>
+                統合的アプローチが生む圧倒的な納得感
+                <span className="w-12 h-px bg-gold hidden md:block"></span>
+              </h3>
+              <p className="text-base md:text-lg text-text-main leading-loose">
+                「Dr.リバイブ」で膝を温かく、栄養に満ちたフカフカの土壌へとリバイブさせ、そこに「高品質な幹細胞」を届ける。<br className="hidden md:block" />
+                <span className="font-bold text-primary">「内科的アプローチ」×「再生医療」の融合</span>こそが、痛みの根本改善へと導く当院独自のメソッドです。
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -522,33 +525,28 @@ export default function App() {
       <section id="doctor" className="py-32 md:py-48 bg-bg-white border-t border-border-light">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <SectionHeading title="医師紹介" subtitle="DOCTOR" />
-          <div className="grid lg:grid-cols-12 gap-16">
-            <div className="lg:col-span-8 lg:col-start-3">
-              <div className="border-l border-gold pl-8 md:pl-12 mb-20">
-                <h2 className="text-3xl md:text-4xl font-serif text-primary mb-8">院長 寳學 英隆<br/><span className="text-lg text-text-muted font-sans mt-2 block">Dr. Hidetaka Hougaku</span></h2>
-                <div className="space-y-6 text-base text-text-main leading-loose">
-                  <p>
-                    当院のホームページをご覧いただき、誠にありがとうございます。院長の寳學英隆です。
-                  </p>
-                  <p>
-                    大阪市北区にあるゲートウェイクリニック大阪梅田は、「未来の健康と美をデザインする」をコンセプトに、2024年9月に開業致しました。最先端の医療技術と心温まる対応で、皆様の健康と美容をサポートいたします。また内科・循環器内科の専門知識を活かしつつ、美容医療にも力を入れ、血液浄化や再生医療、オーダーメイドスキンケアなど、先進的な治療方法を取り入れています。
-                  </p>
-                  <p>
-                    予防医学の観点から生活習慣病の診療も行い、皆様の健やかな毎日をトータルでサポートいたします。些細なことでもお気軽にご相談下さい。皆様に寄り添える医療を提供できるように努めてまいりますのでよろしくお願い致します。
-                  </p>
-                </div>
-              </div>
-              
-              <div className="aspect-[21/9] w-full overflow-hidden bg-bg-main">
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            <div className="lg:col-span-5">
+              <div className="aspect-[3/4] w-full overflow-hidden bg-bg-main shadow-xl">
                 <img 
-                  src="https://picsum.photos/seed/stethoscope-macro/1200/500" 
-                  alt="Medical precision" 
+                  src="https://www.gateway-clinic.com/wp/wp-content/webp-express/webp-images/uploads/2024/10/b8e32e921c62c4ed0d25e1cabe350f49-1000x1389.jpg.webp" 
+                  alt="院長 寳學 英隆" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
               </div>
-
-              <div className="mt-20 grid md:grid-cols-2 gap-12">
+            </div>
+            <div className="lg:col-span-7">
+              <div className="border-l border-gold pl-8 md:pl-12 mb-16">
+                <h2 className="text-3xl md:text-4xl font-serif text-primary mb-8">院長 寳學 英隆<br/><span className="text-lg text-text-muted font-sans mt-2 block">Dr. Hidetaka Hougaku</span></h2>
+                <div className="space-y-6 text-base text-text-main leading-loose">
+                  <p>
+                    「なぜ今まで治らなかったのか？」その答えは、局所の問題だけでなく、血流や代謝といった全身の「土壌」が大きく影響しているからです。私は内科・循環器内科の専門知識と、血管や細胞の加齢に関する長年の研究経験から、細胞が喜ぶ環境を根本から再起動させた上で、再生の種（幹細胞）をまくことの重要性を確信しています。かけがえのない治療を真の意味で「一生の宝物」にするために、正確な診断と洗練された医療技術で皆様の歩む未来をサポートします。
+                  </p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-12">
                 <div>
                   <h4 className="font-serif text-xl text-primary mb-6 border-b border-border-light pb-2">略歴</h4>
                   <ul className="space-y-3 text-sm md:text-base text-text-main leading-loose">
@@ -609,14 +607,14 @@ export default function App() {
             <div className="lg:col-span-7">
               <div className="w-full aspect-video bg-white shadow-xl overflow-hidden">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d3280.106826507718!2d135.4921601762114!3d34.7024897729194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e68d95e3a70b%3A0x1a81dc125208f88!2zS0lUVEXlpKfpmKo!5e0!3m2!1sja!2sjp!4v1712123456789!5m2!1sja!2sjp" 
+                  src="https://maps.google.com/maps?q=ゲートウェイクリニック大阪梅田&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 
                   allowFullScreen={true} 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Google Maps KITTE大阪"
+                  title="Google Maps ゲートウェイクリニック大阪梅田"
                 ></iframe>
               </div>
             </div>
@@ -636,8 +634,8 @@ export default function App() {
       {/* Footer */}
       <footer className="bg-bg-white py-16 px-6 md:px-12 border-t border-border-light">
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="font-serif text-xl tracking-widest text-primary">
-            ゲートウェイクリニック大阪梅田
+          <div className="flex-shrink-0">
+            <img src="https://www.gateway-clinic.com/wp/wp-content/webp-express/webp-images/themes/original_theme/assets/img/common/logo.png.webp" alt="ゲートウェイクリニック大阪梅田" className="h-12 object-contain" />
           </div>
           <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-xs font-sans text-text-main">
             <a href="#" className="hover:text-primary transition-colors">プライバシーポリシー</a>
