@@ -73,7 +73,7 @@ const BeginnerContent = () => (
         <h3 className="text-xl font-serif text-primary leading-relaxed">
           「今週もまた、ヒアルロン酸の注射ですか？」
         </h3>
-        <p className="text-sm text-text-main leading-loose">
+        <p className="text-base text-text-main leading-loose">
           終わりのない通院から卒業する、『切らない膝治療』の最新の解決策。整形外科でのヒアルロン酸注射や痛み止め。これらは決して無駄ではありませんが、すり減った軟骨を元に戻すものではありません。いわば、サビた自転車に「潤滑油」を差しているのと同じ状態（その場しのぎ）です。根本的な解決にはならないため、いずれ限界が来て「人工関節の手術」を宣告されてしまう方が後を絶たないのです。
         </p>
       </div>
@@ -83,28 +83,28 @@ const BeginnerContent = () => (
         <h3 className="text-xl font-serif text-primary leading-relaxed">
           「手術」か「我慢」か。<br/>その2択を終わらせる第3の選択肢【再生医療】。
         </h3>
-        <p className="text-sm text-text-main leading-loose">
-          「人工関節の手術は絶対に避けたい…」 そんな方に今、選ばれているのが「再生医療（幹細胞治療）」です。ご自身の脂肪などから採取した細胞を膝に注射することで、失われた軟骨などの組織を「自分の力で修復・再生させる」最先端の治療法です。メスを入れないため、日帰りで、体への負担が少ないのが最大の特徴です。
+        <p className="text-base text-text-main leading-loose">
+          「人工関節の手術は絶対に避けたい…」 そんな方に今、選ばれているのが「再生医療（幹細胞治療）」です。ご自身の脂肪などから採取した細胞を用いて幹細胞での治療を行うことで、失われた軟骨などの組織を「自分の力で修復・再生させる」最先端の治療法です。メスを入れないため、日帰りで、体への負担が少ないのが最大の特徴です。
         </p>
       </div>
 
       <div className="space-y-6">
         <span className="text-gold font-serif text-3xl block mb-4">03</span>
         <h3 className="text-xl font-serif text-primary leading-relaxed">
-          ちょっと待って！<br/>「ただ注射するだけ」では、費用が無駄になるかもしれません。
+          ちょっと待って！<br/>「ただ幹細胞での治療を行うだけ」では、費用が無駄になるかもしれません。
         </h3>
-        <p className="text-sm text-text-main leading-loose">
-          再生医療は素晴らしい治療ですが、弱点があります。幹細胞は、いわば「再生の種」です。しかし、長年痛みを抱えた膝の周りは、血流が悪く冷え切った『カチカチの枯れた土壌』になっています。栄養のない冷たい土壌に、いくら高級な種（幹細胞）を注射しても、うまく育たずに効果が出ないことがあるのです。
+        <p className="text-base text-text-main leading-loose">
+          再生医療は素晴らしい治療ですが、弱点があります。幹細胞は、いわば「再生の種」です。しかし、長年痛みを抱えた膝の周りは、血流が悪く冷え切った『カチカチの枯れた土壌』になっています。栄養のない冷たい土壌に、いくら高級な種（幹細胞）を用いて幹細胞での治療を行っても、うまく育たずに効果が出ないことがあるのです。
         </p>
       </div>
 
       <div className="space-y-6">
         <span className="text-gold font-serif text-3xl block mb-4">04</span>
         <h3 className="text-xl font-serif text-primary leading-relaxed">
-          注射と同時に、膝の「土壌」と「天然サポーター」を復活させる。
+          幹細胞での治療と同時に、膝の「土壌」と「天然サポーター」を復活させる。
         </h3>
-        <p className="text-sm text-text-main leading-loose">
-          これが、当院の【Dr.リバイブ】というプログラムです。当院では、再生医療の効果を最大限に引き出すために、注射の前後で特別な準備とフォローを行います。特殊な高周波と内側からの栄養で、膝まわりの細胞にエネルギーを充電し、幹細胞が一番育ちやすい「温かい環境」を作ります。さらに、膝の痛みの原因である「太ももの筋肉の衰え」を、キツいリハビリなしで呼び覚まし、膝を支える力を取り戻します。
+        <p className="text-base text-text-main leading-loose">
+          これが、当院の【Dr.リバイブ】というプログラムです。当院では、再生医療の効果を最大限に引き出すために、幹細胞での治療の前後で特別な準備とフォローを行います。特殊な高周波と内側からの栄養で、膝まわりの細胞にエネルギーを充電し、幹細胞が一番育ちやすい「温かい環境」を作ります。さらに、膝の痛みの原因である「太ももの筋肉の衰え」を呼び覚まし、膝を支える力を取り戻します。
         </p>
       </div>
 
@@ -112,11 +112,11 @@ const BeginnerContent = () => (
         <h3 className="text-2xl font-serif text-primary leading-relaxed">
           「最高の土壌」に「最高の種」を。<br/>一生、自分の足で歩くための究極のプログラム
         </h3>
-        <p className="text-sm text-text-main leading-loose">
-          痛みを抑え、土台を整える「Dr.リバイブ」。すり減った組織を修復する「再生医療（幹細胞注射）」。さらに、全身の修復力を若返らせる「幹細胞上清液の点滴」。これらをすべて組み合わせた総合治療が、全国でも当院だけで受けられる『切らない膝治療の最新かつ最終かつ最高の到達地点』です。
+        <p className="text-base text-text-main leading-loose">
+          痛みを抑え、土台を整える「Dr.リバイブ」。すり減った組織を修復する「再生医療（幹細胞治療）」。これらを組み合わせた総合治療が、全国でも当院だけで受けられる『切らない膝治療の最新かつ最終かつ最高の到達地点』です。
         </p>
         <div className="pt-8">
-          <p className="text-sm text-primary font-serif mb-6">まずは、あなたの現状を総合的に診てもらいませんか？</p>
+          <p className="text-base text-primary font-serif mb-6">まずは、あなたの現状を総合的に診てもらいませんか？</p>
           <CTAButton text="LINEで無料相談・初回検査を予約する" />
         </div>
       </div>
@@ -133,7 +133,7 @@ const ExperiencedContent = () => (
         <h3 className="text-xl font-serif text-primary leading-relaxed">
           PRP療法が「期待外れ」に終わってしまった理由。
         </h3>
-        <p className="text-sm text-text-main leading-loose">
+        <p className="text-base text-text-main leading-loose">
           PRPなどの注入療法は、ご自身の修復力に頼る治療です。しかし、膝の細胞が「エネルギー切れ（ATP不足）」を起こしていると、どれだけ良い刺激を与えても、細胞は修復作業を始めてくれません。「スイッチが入らない体」に、信号だけを送っても効果は出にくいのです。
         </p>
       </div>
@@ -143,8 +143,8 @@ const ExperiencedContent = () => (
         <h3 className="text-xl font-serif text-primary leading-relaxed">
           貴重な「種」を、痩せた「土壌」に撒いていませんか？
         </h3>
-        <p className="text-sm text-text-main leading-loose">
-          脂肪幹細胞（MSC）は非常に強力な再生の種です。しかし、膝の軟骨が消失し、炎症が続いている過酷な環境で「カチカチで、栄養の届かない土壌」に注射だけをしても、幹細胞が根付く（定着する）のは非常に困難です。
+        <p className="text-base text-text-main leading-loose">
+          脂肪幹細胞（MSC）は非常に強力な再生の種です。しかし、膝の軟骨が消失し、炎症が続いている過酷な環境で「カチカチで、栄養の届かない土壌」に幹細胞での治療だけを行っても、幹細胞が根付く（定着する）のは非常に困難です。
         </p>
       </div>
 
@@ -153,7 +153,7 @@ const ExperiencedContent = () => (
         <h3 className="text-xl font-serif text-primary leading-relaxed">
           高周波と栄養で、膝の「エネルギー工場」を再起動する。
         </h3>
-        <p className="text-sm text-text-main leading-loose">
+        <p className="text-base text-text-main leading-loose">
           軟骨細胞の代謝は、すべて「ミトコンドリア」の働きに依存しています。Dr.リバイブは、高周波で深部からエネルギー（電子）をチャージし、ミトコンドリアを活性化させます。「温かく、エネルギーに満ちた土壌」に整えてから幹細胞を迎える。これが、治療の価値を最大限に引き出す絶対条件です。
         </p>
       </div>
@@ -161,22 +161,22 @@ const ExperiencedContent = () => (
       <div className="space-y-6">
         <span className="text-gold font-serif text-3xl block mb-4">04</span>
         <h3 className="text-xl font-serif text-primary leading-relaxed">
-          「点（膝）」への注射に加え、「線（全身）」からの点滴で修復力を爆発させる。
+          膝を守る「天然のサポーター（筋肉）」を呼び覚ます。
         </h3>
-        <p className="text-sm text-text-main leading-loose">
-          当院では、脂肪幹細胞の「局所注射」に加えて、「歯髄幹細胞上清液の全身投与（点滴）」を推奨しています。膝という「現場」を直しながら、血管を通じて「全身の修復システム」を最新状態にアップデートする。この内側と外側からのダブルアプローチが、炎症を抑え、組織の再生を強力に後押しします。
+        <p className="text-base text-text-main leading-loose">
+          膝の軟骨障害の多くは、筋肉（大腿四頭筋）が正しく使えていないことが原因です。Dr.リバイブは、眠っている硬くなり癒着した筋肉を「使える状態」へ再起動させます。再生した軟骨を、新しい筋肉が守り続ける。これが「一生歩ける」仕組みです。
         </p>
       </div>
 
       <div className="md:col-span-2 space-y-8 pt-12 border-t border-border-light text-center max-w-3xl mx-auto">
         <h3 className="text-2xl font-serif text-primary leading-relaxed">
-          膝を守る「天然のサポーター（筋肉）」を呼び覚ます。
+          最高の状態で再生医療へ進むために。
         </h3>
-        <p className="text-sm text-text-main leading-loose">
-          膝の軟骨障害の多くは、筋肉（大腿四頭筋）が正しく使えていないことが原因です。Dr.リバイブは、痛みや苦労と時間を伴うリハビリなしで、眠っている硬くなり癒着した筋肉を「使える状態」へ再起動させます。再生した軟骨を、新しい筋肉が守り続ける。これが「一生歩ける」仕組みです。
+        <p className="text-base text-text-main leading-loose">
+          過去の治療で効果を感じられなかった方こそ、土壌を整える「Dr.リバイブ」と「幹細胞治療」の統合的アプローチが必要です。
         </p>
         <div className="pt-8">
-          <p className="text-sm text-primary font-serif mb-6">もう、迷わなくて大丈夫です。最高の状態で再生医療へ進むことをお勧めします。</p>
+          <p className="text-base text-primary font-serif mb-6">もう、迷わなくて大丈夫です。最高の状態で再生医療へ進むことをお勧めします。</p>
           <CTAButton text="LINEで無料相談・初回検査を予約する" />
         </div>
       </div>
@@ -206,12 +206,12 @@ export default function App() {
         scrolled ? "bg-bg-white/95 backdrop-blur-md border-b border-border-light py-4" : "bg-transparent py-6"
       )}>
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between">
-          <a href="#" className="font-serif text-xl tracking-widest text-primary">
-            CURATOR
+          <a href="#" className="font-serif text-lg md:text-xl tracking-widest text-primary">
+            ゲートウェイクリニック大阪梅田
           </a>
           
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             {[
               { name: "幹細胞治療について", href: "#stemcell" },
               { name: "当院について", href: "#about" },
@@ -221,7 +221,7 @@ export default function App() {
               { name: "医師紹介", href: "#doctor" },
               { name: "アクセス", href: "#access" },
             ].map((item) => (
-              <a key={item.name} href={item.href} className="text-xs font-serif tracking-widest text-text-main hover:text-primary transition-colors">
+              <a key={item.name} href={item.href} className="text-sm font-serif tracking-widest text-text-main hover:text-primary transition-colors font-medium">
                 {item.name}
               </a>
             ))}
@@ -295,14 +295,13 @@ export default function App() {
             className="max-w-3xl"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-primary leading-[1.4] tracking-tight mb-8">
-              終わりのない通院から卒業する、<br />
-              <span className="text-gold">『切らない膝治療』</span>の<br />
-              最新の解決策。
+              膝の再生医療を<br />
+              <span className="text-gold">「一生の宝物」</span>にするために。
             </h1>
             <p className="text-base md:text-lg text-text-main font-sans leading-loose mb-12 max-w-2xl">
-              「人工関節の手術は絶対に避けたい…」<br />
-              そんな方に今、選ばれているのが「再生医療（幹細胞治療）」です。<br />
-              ご自身の力で組織を修復・再生させる、メスを入れない日帰り治療。
+              過去の治療で効果を感じられなかった方へ贈る、細胞の再起動という新常識。<br /><br />
+              血管・加齢医学のスペシャリスト 寳學英隆院長による「正確な診断」。<br />
+              次世代の統合型再生医療「Dr.リバイブ」×「幹細胞治療」で、あなたの膝を根本から再起動する。
             </p>
             <CTAButton />
           </motion.div>
@@ -313,37 +312,114 @@ export default function App() {
       <section id="stemcell" className="py-32 md:py-48">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <SectionHeading title="幹細胞治療について" subtitle="ABOUT STEM CELL" />
-          <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
-            <div className="lg:col-span-5">
+          <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center mb-32">
+            <div className="lg:col-span-6">
               <h3 className="text-2xl font-serif text-primary mb-6">再生医療（幹細胞治療）とは？</h3>
-              <p className="text-sm text-text-main leading-loose mb-12">
-                人間の体に本来備わっている「自己修復能力」を最大限に引き出す最先端の治療法です。ご自身の脂肪組織から取り出した「間葉系幹細胞」を、厚生労働省届出の専用施設で培養・活性化し、膝関節内に注射します。幹細胞の持つ「損傷箇所への集積（ホーミング効果）」により、すり減った軟骨や傷ついた組織の保護・修復・再生を強力に促します。
+              <p className="text-base text-text-main leading-loose mb-12">
+                人間の体に本来備わっている「自己修復能力」を最大限に引き出す最先端の治療法です。ご自身の脂肪組織から取り出した「間葉系幹細胞」を、厚生労働省届出の専用施設で培養・活性化し、膝関節内に幹細胞での治療を行います。幹細胞の持つ「損傷箇所への集積（ホーミング効果）」により、すり減った軟骨や傷ついた組織の保護・修復・再生を強力に促します。
               </p>
             </div>
-            
-            <div className="lg:col-span-7">
-              <div className="aspect-square bg-white p-4 shadow-2xl">
+            <div className="lg:col-span-6">
+              <div className="aspect-[4/3] bg-white p-4 shadow-2xl">
                 <img 
-                  src="https://picsum.photos/seed/gold-abstract/800/800" 
-                  alt="Abstract cells" 
+                  src="https://picsum.photos/seed/stemcell-medical/800/600" 
+                  alt="Stem cell therapy" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
               </div>
             </div>
           </div>
+
+          <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center mb-32">
+            <div className="lg:col-span-6 lg:order-2">
+              <h3 className="text-2xl font-serif text-primary mb-6">なぜ当院の治療は「唯一無二」なのか？</h3>
+              <p className="text-base text-text-main leading-loose mb-12">
+                「なぜ今まで治らなかったのか？」――その答えは、膝の「土壌（体内環境）」にあります。<br />
+                幹細胞は、いわば「再生の種」です。しかし、慢性的な痛みを抱えた膝の多くは、血流が滞り、細胞のエネルギーが枯渇した状態にあります。どれほど質の高い「種」を撒いても、冷たく乾いた「土壌」では、根を張る（定着する）ことはできません。かけがえのない治療を真の意味で成功に導くためには、事前の「土壌改良」が不可欠なのです。
+              </p>
+            </div>
+            <div className="lg:col-span-6 lg:order-1">
+              <div className="aspect-[4/3] bg-white p-4 shadow-2xl">
+                <img 
+                  src="https://picsum.photos/seed/soil-concept/800/600" 
+                  alt="Soil concept" 
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center mb-32">
+            <div className="lg:col-span-6">
+              <h3 className="text-2xl font-serif text-primary mb-6">Dr.リバイブによる「根本からの再起動」</h3>
+              <div className="space-y-8">
+                <div>
+                  <h4 className="text-lg font-serif text-primary mb-3">1. 医療用高周波による「深部加温」で、細胞の道を切り拓く</h4>
+                  <p className="text-base text-text-main leading-loose">
+                    手技では届かない関節深部の組織温度を上昇させます。滞っていた血流を劇的に改善することで、注入された幹細胞が迷うことなく損傷箇所へ行き渡る「道」が整います。
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-serif text-primary mb-3">2. 分子栄養学による「インナーケア」で、細胞を再起動させる</h4>
+                  <p className="text-base text-text-main leading-loose">
+                    血管・加齢医学の専門家である院長が「正確な診断」に基づき、細胞が働くための栄養素を最適化。幹細胞が「修復作業」を最大限の力で行える環境を作ります。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-6">
+              <div className="aspect-[4/3] bg-white p-4 shadow-2xl">
+                <img 
+                  src="https://picsum.photos/seed/medical-device/800/600" 
+                  alt="Medical device" 
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-2xl font-serif text-primary mb-6">統合的アプローチが生む圧倒的な納得感</h3>
+            <p className="text-base text-text-main leading-loose">
+              「Dr.リバイブ」で膝を温かく、栄養に満ちたフカフカの土壌へとリバイブさせ、そこに「高品質な幹細胞」を届ける。「内科的アプローチ」×「再生医療」の融合こそが、痛みの根本改善へと導く当院独自のメソッドです。
+            </p>
+          </div>
         </div>
       </section>
 
       {/* About Section */}
       <section id="about" className="py-32 md:py-48 bg-bg-white border-t border-border-light">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <SectionHeading title="当院について" subtitle="ABOUT US" />
-          <div className="max-w-3xl mx-auto space-y-16">
-            <div>
-              <h3 className="text-2xl font-serif text-primary mb-6">なぜ当院の治療は「唯一無二」なのか？</h3>
-              <p className="text-sm text-text-main leading-loose text-left md:text-center">
-                「なぜ今まで治らなかったのか？」――その答えは、膝の「土壌（体内環境）」にあります。幹細胞は、いわば「再生の種」です。しかし、慢性的な痛みを抱えた膝の多くは、血流が滞り、細胞のエネルギーが枯渇した状態にあります。どれほど質の高い「種」を撒いても、冷たく乾いた「土壌」では、根を張る（定着する）ことはできません。かけがえのない治療を真の意味で成功に導くためには、事前の「土壌改良」が不可欠なのです。
+          <div className="grid md:grid-cols-3 gap-12 mt-16">
+            <div className="space-y-6">
+              <div className="aspect-square bg-white p-2 shadow-lg mb-6">
+                <img src="https://picsum.photos/seed/clinic-management/600/600" alt="Management" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              </div>
+              <h3 className="text-xl font-serif text-primary">法に準拠した管理体制</h3>
+              <p className="text-sm text-text-main leading-loose">
+                再生医療等の安全性の確保等に関する法律に基づき、国の基準を満たした厳格な管理体制。
+              </p>
+            </div>
+            <div className="space-y-6">
+              <div className="aspect-square bg-white p-2 shadow-lg mb-6">
+                <img src="https://picsum.photos/seed/cell-culture/600/600" alt="Cell Culture" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              </div>
+              <h3 className="text-xl font-serif text-primary">高度な細胞培養加工施設</h3>
+              <p className="text-sm text-text-main leading-loose">
+                厚生労働省に届出済みの細胞培養加工施設（施設番号：FC5140001等）と提携し、医薬品製造と同等基準の品質管理体制で細胞を培養。
+              </p>
+            </div>
+            <div className="space-y-6">
+              <div className="aspect-square bg-white p-2 shadow-lg mb-6">
+                <img src="https://picsum.photos/seed/medical-safety/600/600" alt="Safety" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              </div>
+              <h3 className="text-xl font-serif text-primary">副作用・リスク</h3>
+              <p className="text-sm text-text-main leading-loose">
+                ご自身の細胞を使用するため本質的な副作用（拒絶反応など）は極めて低いですが、稀に局所麻酔によるアレルギー反応や内出血が生じる場合があります。※本治療は自由診療です。
               </p>
             </div>
           </div>
@@ -449,13 +525,16 @@ export default function App() {
           <div className="grid lg:grid-cols-12 gap-16">
             <div className="lg:col-span-8 lg:col-start-3">
               <div className="border-l border-gold pl-8 md:pl-12 mb-20">
-                <h2 className="text-3xl md:text-4xl font-serif text-primary mb-8">院長 寳學 秀高<br/><span className="text-lg text-text-muted font-sans mt-2 block">Dr. Hidetaka Hougaku</span></h2>
-                <div className="space-y-6 text-sm text-text-main leading-loose">
+                <h2 className="text-3xl md:text-4xl font-serif text-primary mb-8">院長 寳學 英隆<br/><span className="text-lg text-text-muted font-sans mt-2 block">Dr. Hidetaka Hougaku</span></h2>
+                <div className="space-y-6 text-base text-text-main leading-loose">
                   <p>
-                    当院では、単なる「治療」ではなく、患者様お一人おひとりの身体の歴史（Biological Narrative）を紐解き、根本的な修復を目指すキュレーション（Curation）を行っています。
+                    当院のホームページをご覧いただき、誠にありがとうございます。院長の寳學英隆です。
                   </p>
                   <p>
-                    米国国立衛生研究所（NIH）での研究や、長年の臨床経験から導き出された「科学的根拠に基づく再生医療」を提供し、皆様が一生ご自身の足で歩ける喜びを取り戻すためのサポートを全力で行います。
+                    大阪市北区にあるゲートウェイクリニック大阪梅田は、「未来の健康と美をデザインする」をコンセプトに、2024年9月に開業致しました。最先端の医療技術と心温まる対応で、皆様の健康と美容をサポートいたします。また内科・循環器内科の専門知識を活かしつつ、美容医療にも力を入れ、血液浄化や再生医療、オーダーメイドスキンケアなど、先進的な治療方法を取り入れています。
+                  </p>
+                  <p>
+                    予防医学の観点から生活習慣病の診療も行い、皆様の健やかな毎日をトータルでサポートいたします。些細なことでもお気軽にご相談下さい。皆様に寄り添える医療を提供できるように努めてまいりますのでよろしくお願い致します。
                   </p>
                 </div>
               </div>
@@ -471,21 +550,29 @@ export default function App() {
 
               <div className="mt-20 grid md:grid-cols-2 gap-12">
                 <div>
-                  <h4 className="font-serif text-lg text-primary mb-4">略歴</h4>
-                  <ul className="space-y-2 text-xs text-text-main leading-loose">
+                  <h4 className="font-serif text-xl text-primary mb-6 border-b border-border-light pb-2">略歴</h4>
+                  <ul className="space-y-3 text-sm md:text-base text-text-main leading-loose">
                     <li>1986年 徳島大学医学科卒業</li>
-                    <li>1986年 大阪大学第一内科入局</li>
+                    <li>1986年 大阪大学第一内科入局 高血圧脳卒中の診療・研究に従事</li>
+                    <li>1999年 大阪大学第一内科 助手任用</li>
                     <li>1999年 米国国立衛生研究所(NIH) 加齢研究所に留学</li>
-                    <li>2004年 大阪大学医学部 循環器内科学脳卒中センター講師</li>
-                    <li>2008年 国立大学法人奈良最先端科学技術大学院大学教授</li>
+                    <li>2002年 大阪大学 病態情報内科学 (旧第一内科) 総務委員長 （渉外 人事）</li>
+                    <li>2004年 大阪大学医学部 循環器内科学 脳卒中センター講師</li>
+                    <li>2008年 大阪大学医学部 循環器内科学 脳卒中センター准教授</li>
+                    <li>2008年 国立大学法人奈良先端科学技術大学院大学 教授 保健管理センター所長</li>
                     <li>2024年 ゲートウェイクリニック大阪梅田 院長 就任</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-serif text-lg text-primary mb-4">資格・学会活動</h4>
-                  <p className="text-xs text-text-main leading-loose">
-                    医学博士（大阪大学） / 日本医師会認定産業医 / 日本内科学会 認定内科医 / 日本脳卒中学会 脳卒中専門医 / 日本高血圧学会 特別正会員（FJSH） / ほか多数
-                  </p>
+                  <h4 className="font-serif text-xl text-primary mb-6 border-b border-border-light pb-2">資格・学会活動</h4>
+                  <ul className="space-y-3 text-sm md:text-base text-text-main leading-loose">
+                    <li>医学博士の学位授与（大阪大学）</li>
+                    <li>日本医師会認定産業医</li>
+                    <li>日本内科学会 認定内科医、近畿地方会評議員</li>
+                    <li>日本脳卒中学会 脳卒中専門医、評議員</li>
+                    <li>日本高血圧学会 特別正会員（FJSH）、評議員</li>
+                    <li>日本脳ドック学会 評議員</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -497,41 +584,40 @@ export default function App() {
       <section id="access" className="py-32 md:py-48 bg-bg-main border-t border-border-light">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <SectionHeading title="アクセス" subtitle="ACCESS" />
-          <div className="grid lg:grid-cols-12 gap-8 lg:gap-16">
-            <div className="lg:col-span-4">
-              <h2 className="text-3xl md:text-4xl font-serif text-primary mb-8">Gateway Clinic<br/>Osaka Umeda</h2>
-              <p className="text-sm text-text-main leading-loose mb-12">
-                JR大阪駅直結のKITTE大阪6階。洗練された落ち着きのある空間で、皆様のご来院をお待ちしております。
-              </p>
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
+            <div className="lg:col-span-5">
+              <h2 className="text-2xl md:text-3xl font-serif text-primary mb-8">ゲートウェイクリニック大阪梅田</h2>
+              
+              <div className="space-y-8 text-base text-text-main leading-loose">
+                <div>
+                  <h4 className="font-serif text-primary mb-2 border-b border-border-light pb-2">住所</h4>
+                  <p>〒530-0001<br/>大阪府大阪市北区梅田3丁目2-2 KITTE大阪 6階</p>
+                </div>
+                
+                <div>
+                  <h4 className="font-serif text-primary mb-2 border-b border-border-light pb-2">アクセス</h4>
+                  <p>JR「大阪駅」西口改札直結<br/>Osaka Metro各線・阪神本線 各「梅田駅」「西梅田駅」「東梅田駅」から好アクセス。</p>
+                </div>
+                
+                <div>
+                  <h4 className="font-serif text-primary mb-2 border-b border-border-light pb-2">診療時間</h4>
+                  <p>月曜〜金曜 10:00〜20:00<br/>（最終受付19:00 / 土・日・祝は休診）</p>
+                </div>
+              </div>
             </div>
             
-            <div className="lg:col-span-8 grid md:grid-cols-2 gap-8">
-              <div className="md:col-span-1 md:row-span-2 aspect-[3/4] md:aspect-auto bg-white shadow-xl">
-                <img 
-                  src="https://picsum.photos/seed/clinic-interior/800/1200" 
-                  alt="Clinic interior" 
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div className="aspect-square bg-white shadow-xl">
-                <img 
-                  src="https://picsum.photos/seed/sculpture/800/800" 
-                  alt="Art piece" 
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div className="bg-bg-white p-12 shadow-xl flex flex-col justify-center">
-                <p className="text-[10px] font-sans tracking-[0.2em] text-text-muted uppercase mb-4">LOCATION</p>
-                <h3 className="text-2xl font-serif text-primary mb-4 italic">KITTE Osaka 6F</h3>
-                <p className="text-xs text-text-main leading-loose mb-8">
-                  3-2-2 Umeda, Kita-ku, Osaka-shi, Osaka 530-0001
-                </p>
-                <div className="space-y-2 text-xs text-text-main">
-                  <p>JR「大阪駅」西口改札直結</p>
-                  <p>月曜〜金曜 10:00〜20:00</p>
-                </div>
+            <div className="lg:col-span-7">
+              <div className="w-full aspect-video bg-white shadow-xl overflow-hidden">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d3280.106826507718!2d135.4921601762114!3d34.7024897729194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e68d95e3a70b%3A0x1a81dc125208f88!2zS0lUVEXlpKfpmKo!5e0!3m2!1sja!2sjp!4v1712123456789!5m2!1sja!2sjp" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen={true} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Google Maps KITTE大阪"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -548,18 +634,18 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-bg-main py-16 px-6 md:px-12 border-t border-border-light">
+      <footer className="bg-bg-white py-16 px-6 md:px-12 border-t border-border-light">
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="font-serif text-lg tracking-widest text-primary">
-            THE CLINICAL CURATOR.
+          <div className="font-serif text-xl tracking-widest text-primary">
+            ゲートウェイクリニック大阪梅田
           </div>
-          <div className="flex gap-8 text-[10px] font-sans tracking-[0.2em] text-text-muted uppercase">
-            <a href="#" className="hover:text-primary transition-colors">PRIVACY POLICY</a>
-            <a href="#" className="hover:text-primary transition-colors">ETHICAL STANDARDS</a>
-            <a href="#" className="hover:text-primary transition-colors">JOURNAL</a>
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-xs font-sans text-text-main">
+            <a href="#" className="hover:text-primary transition-colors">プライバシーポリシー</a>
+            <a href="#" className="hover:text-primary transition-colors">免責事項</a>
+            <a href="#" className="hover:text-primary transition-colors">運営法人情報</a>
           </div>
-          <p className="text-[10px] font-sans tracking-[0.1em] text-text-muted uppercase">
-            © 2024 THE CLINICAL CURATOR. ALL RIGHTS RESERVED.
+          <p className="text-xs font-sans text-text-muted">
+            ©︎ゲートウェイクリニック大阪梅田
           </p>
         </div>
       </footer>
