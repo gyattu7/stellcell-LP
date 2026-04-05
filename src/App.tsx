@@ -285,7 +285,17 @@ export default function App() {
                   <a 
                     key={item.name} 
                     href={item.href} 
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsMobileMenuOpen(false);
+                      const targetId = item.href.replace('#', '');
+                      const element = document.getElementById(targetId);
+                      if (element) {
+                        setTimeout(() => {
+                          element.scrollIntoView({ behavior: 'smooth' });
+                        }, 100);
+                      }
+                    }}
                     className="text-sm font-serif text-primary tracking-widest"
                   >
                     {item.name}
