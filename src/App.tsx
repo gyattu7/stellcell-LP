@@ -6,7 +6,7 @@ import { cn } from './lib/utils';
 // --- UI Components ---
 const Overline = ({ text }: { text: string }) => (
   <div className="flex items-center gap-4 mb-8">
-    <span className="text-[10px] md:text-xs font-sans tracking-[0.25em] text-text-muted uppercase">{text}</span>
+    <span className="text-[10px] md:text-xs font-serif tracking-[0.25em] text-text-muted uppercase">{text}</span>
     <div className="w-12 h-px bg-border-light" />
   </div>
 );
@@ -15,7 +15,7 @@ const SectionHeading = ({ title, subtitle, className }: { title: string, subtitl
   <div className={cn("text-center mb-20", className)}>
     <h2 className="text-4xl md:text-5xl font-serif text-primary mb-6">{title}</h2>
     <div className="w-16 h-px bg-gold mx-auto mb-6" />
-    <p className="text-sm font-sans tracking-[0.2em] text-text-muted uppercase">{subtitle}</p>
+    <p className="text-sm font-serif tracking-[0.2em] text-text-muted uppercase">{subtitle}</p>
   </div>
 );
 
@@ -302,15 +302,17 @@ export default function App() {
 
       {/* Hero Section */}
       <section className="relative h-screen min-h-[800px] flex items-center pt-20">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 bg-white">
           <img 
-            src="https://images.unsplash.com/photo-1576091160550-2173ff9e5eb3?auto=format&fit=crop&w=1920&q=80" 
-            alt="Doctor in clinic" 
-            className="w-full h-full object-cover object-center"
+            src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?auto=format&fit=crop&w=1920&q=80" 
+            alt="Clean White Luxury Background" 
+            className="w-full h-full object-cover object-center opacity-60"
             referrerPolicy="no-referrer"
           />
-          {/* 視認性を高めるためにグラデーションを濃くし、少しぼかしを入れる */}
-          <div className="absolute inset-0 bg-gradient-to-r from-bg-main via-bg-main/95 to-bg-main/40 backdrop-blur-[2px]" />
+          {/* 白をベースにしつつ、文字の視認性を極限まで高めるグラデーション */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/30" />
+          {/* ほんのりとゴールドの光を差し込ませて高級感を演出 */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(197,160,89,0.15),transparent_60%)]" />
         </div>
         
         <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 w-full">
@@ -324,7 +326,7 @@ export default function App() {
               「手術」か「我慢」か。<br />
               その2択を終わらせる<span className="text-gold">第3の選択肢</span>
             </h1>
-            <p className="text-base md:text-lg text-text-main font-sans leading-loose mb-12 max-w-2xl">
+            <p className="text-base md:text-lg text-text-main font-serif leading-loose mb-12 max-w-2xl">
               過去の治療で効果を感じられなかった方へ贈る、細胞の再起動という新常識。<br /><br />
               次世代の統合型再生医療「Dr.リバイブ」×「幹細胞治療」で、あなたの膝を根本から再起動する。
             </p>
@@ -345,11 +347,11 @@ export default function App() {
               </p>
             </div>
             <div className="lg:col-span-6">
-              <div className="aspect-[4/3] bg-white p-4 shadow-2xl">
+              <div className="aspect-video bg-white p-4 shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80" 
+                  src="https://gateway-clinic.com/lpimg/contents01.png?v=3" 
                   alt="Stem cell therapy" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -365,25 +367,13 @@ export default function App() {
               </p>
             </div>
             <div className="lg:col-span-6 lg:order-1">
-              <div className="bg-white p-4 shadow-2xl flex flex-col sm:flex-row gap-4">
-                <div className="flex-1 text-center">
-                  <img 
-                    src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?auto=format&fit=crop&w=400&q=80" 
-                    alt="これまでの膝（カチカチの土壌）" 
-                    className="w-full aspect-square object-cover mb-3"
-                    referrerPolicy="no-referrer"
-                  />
-                  <p className="text-sm font-bold text-primary">これまでの膝<br/><span className="text-xs font-normal">（カチカチの土壌）</span></p>
-                </div>
-                <div className="flex-1 text-center">
-                  <img 
-                    src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=400&q=80" 
-                    alt="Dr.リバイブ後の膝（フカフカの土壌）" 
-                    className="w-full aspect-square object-cover mb-3"
-                    referrerPolicy="no-referrer"
-                  />
-                  <p className="text-sm font-bold text-primary">Dr.リバイブ後<br/><span className="text-xs font-normal">（フカフカの土壌）</span></p>
-                </div>
+              <div className="aspect-video bg-white p-4 shadow-2xl">
+                <img 
+                  src="https://gateway-clinic.com/lpimg/contents02.png?v=4" 
+                  alt="なぜ当院の治療は「唯一無二」なのか？" 
+                  className="w-full h-full object-contain"
+                  referrerPolicy="no-referrer"
+                />
               </div>
             </div>
           </div>
@@ -401,22 +391,19 @@ export default function App() {
                 <div>
                   <h4 className="text-lg font-serif text-primary mb-3">2. 分子栄養学による「インナーケア」で、細胞を再起動させる</h4>
                   <p className="text-base text-text-main leading-loose">
-                    血管・加齢医学の専門家である院長が「正確な診断」に基づき、細胞が働くための栄養素を最適化。幹細胞が「修復作業」を最大限の力で行える環境を作ります。
+                    Drリバイブを開発した医師による「正確な診断」に基づき、細胞が働くための栄養素を最適化。幹細胞が「修復作業」を最大限の力で行える環境を作ります。
                   </p>
                 </div>
               </div>
             </div>
             <div className="lg:col-span-6">
-              <div className="aspect-[4/3] bg-white p-4 shadow-2xl relative group">
+              <div className="aspect-video bg-white p-4 shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1605684954998-685c79d6a018?auto=format&fit=crop&w=800&q=80" 
-                  alt="温かい高周波治療の様子" 
+                  src="https://gateway-clinic.com/lpimg/contents06.png" 
+                  alt="Dr.リバイブによる「根本からの再起動」" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-4 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                  <p className="text-white font-bold text-sm md:text-base">心地よい温かさで深部からほぐす施術風景</p>
-                </div>
               </div>
             </div>
           </div>
@@ -444,8 +431,8 @@ export default function App() {
           <SectionHeading title="当院について" subtitle="ABOUT US" />
           <div className="grid md:grid-cols-3 gap-12 mt-16">
             <div className="space-y-6">
-              <div className="aspect-square bg-white p-2 shadow-lg mb-6">
-                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="Management" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              <div className="aspect-square bg-white p-4 shadow-lg mb-6">
+                <img src="https://gateway-clinic.com/lpimg/contents03.png?v=4" alt="Management" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <h3 className="text-xl font-serif text-primary">法に準拠した管理体制</h3>
               <p className="text-sm text-text-main leading-loose">
@@ -453,8 +440,8 @@ export default function App() {
               </p>
             </div>
             <div className="space-y-6">
-              <div className="aspect-square bg-white p-2 shadow-lg mb-6">
-                <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80" alt="Cell Culture" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              <div className="aspect-square bg-white p-4 shadow-lg mb-6">
+                <img src="https://gateway-clinic.com/lpimg/contents05.png?v=4" alt="Cell Culture" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <h3 className="text-xl font-serif text-primary">高度な細胞培養加工施設</h3>
               <p className="text-sm text-text-main leading-loose">
@@ -462,8 +449,8 @@ export default function App() {
               </p>
             </div>
             <div className="space-y-6">
-              <div className="aspect-square bg-white p-2 shadow-lg mb-6">
-                <img src="https://images.unsplash.com/photo-1584516150909-c43483ee7932?auto=format&fit=crop&w=600&q=80" alt="Safety" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              <div className="aspect-square bg-white p-4 shadow-lg mb-6">
+                <img src="https://gateway-clinic.com/lpimg/contents04.png?v=4" alt="Safety" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <h3 className="text-xl font-serif text-primary">副作用・リスク</h3>
               <p className="text-sm text-text-main leading-loose">
@@ -572,49 +559,56 @@ export default function App() {
           <SectionHeading title="医師紹介" subtitle="DOCTOR" />
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             <div className="lg:col-span-5">
-              <div className="aspect-[3/4] w-full overflow-hidden bg-bg-main shadow-xl">
+              <div className="w-full overflow-hidden bg-bg-main shadow-xl">
                 <img 
-                  src="https://www.gateway-clinic.com/wp/wp-content/webp-express/webp-images/uploads/2024/10/b8e32e921c62c4ed0d25e1cabe350f49-1000x1389.jpg.webp" 
-                  alt="院長 寳學 英隆" 
-                  className="w-full h-full object-cover"
+                  src="https://gateway-clinic.com/lpimg/contents07.png" 
+                  alt="理事長 山本　周平" 
+                  className="w-full h-auto object-contain"
                   referrerPolicy="no-referrer"
                 />
               </div>
             </div>
             <div className="lg:col-span-7">
               <div className="border-l border-gold pl-8 md:pl-12 mb-16">
-                <h2 className="text-3xl md:text-4xl font-serif text-primary mb-8">院長 寳學 英隆<br/><span className="text-lg text-text-muted font-sans mt-2 block">Dr. Hidetaka Hougaku</span></h2>
+                <h2 className="text-3xl md:text-4xl font-serif text-primary mb-8">理事長 山本　周平<br/><span className="text-lg text-text-muted font-serif mt-2 block">Dr. Shuhei Yamamoto</span></h2>
                 <div className="space-y-6 text-base text-text-main leading-loose">
                   <p>
-                    「なぜ今まで治らなかったのか？」その答えは、局所の問題だけでなく、血流や代謝といった全身の「土壌」が大きく影響しているからです。私は内科・循環器内科の専門知識と、血管や細胞の加齢に関する長年の研究経験から、細胞が喜ぶ環境を根本から再起動させた上で、再生の種（幹細胞）をまくことの重要性を確信しています。かけがえのない治療を真の意味で「一生の宝物」にするために、正確な診断と洗練された医療技術で皆様の歩む未来をサポートします。
+                    「なぜ、これまで治らなかったのか。」<br />
+                    その答えは、局所だけに原因を求めても、本質的な改善には至らないからです。<br />
+                    血流や代謝といった全身の状態、すなわち再生を支える“土壌”そのものが、治療の結果を大きく左右します。
+                  </p>
+                  <p>
+                    私たちは、私が開発したDrリバイブを通じて、細胞が本来の力を発揮できる環境を根本から整えます。<br />
+                    そのうえで、再生の可能性を担う幹細胞を届けることで、幹細胞が持つ力を最大限に引き出す治療を追求しています。
+                  </p>
+                  <p>
+                    このかけがえのない治療を、単なる一時的な選択ではなく、人生における「一生の宝物」としていただくために。<br />
+                    私たちは、正確な診断と研ぎ澄まされた医療技術をもって、皆様の未来に寄り添い、より豊かな明日へと導いてまいります。
                   </p>
                 </div>
               </div>
               
               <div className="grid md:grid-cols-2 gap-12">
                 <div>
-                  <h4 className="font-serif text-xl text-primary mb-6 border-b border-border-light pb-2">略歴</h4>
+                  <h4 className="font-serif text-xl text-primary mb-6 border-b border-border-light pb-2">学歴・経歴</h4>
                   <ul className="space-y-3 text-sm md:text-base text-text-main leading-loose">
-                    <li>1986年 徳島大学医学科卒業</li>
-                    <li>1986年 大阪大学第一内科入局 高血圧脳卒中の診療・研究に従事</li>
-                    <li>1999年 大阪大学第一内科 助手任用</li>
-                    <li>1999年 米国国立衛生研究所(NIH) 加齢研究所に留学</li>
-                    <li>2002年 大阪大学 病態情報内科学 (旧第一内科) 総務委員長 （渉外 人事）</li>
-                    <li>2004年 大阪大学医学部 循環器内科学 脳卒中センター講師</li>
-                    <li>2008年 大阪大学医学部 循環器内科学 脳卒中センター准教授</li>
-                    <li>2008年 国立大学法人奈良先端科学技術大学院大学 教授 保健管理センター所長</li>
-                    <li>2024年 ゲートウェイクリニック大阪梅田 院長 就任</li>
+                    <li>国立神戸大学医学部卒業</li>
+                    <li>製鉄記念広畑病院勤務(形成外科・皮膚科・内科)</li>
+                    <li>大手美容クリニック勤務(美容外科・美容皮膚科)</li>
+                    <li>神戸朝日病院(皮膚科・内科)</li>
+                    <li>美容クリニックにて院長を歴任(美容外科・美容皮膚科)</li>
+                    <li>2019年8月 西宮SHUHEI美容クリニック開院</li>
+                    <li>2024年2月 KOBE美容皮膚科西宮院に名称変更</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-serif text-xl text-primary mb-6 border-b border-border-light pb-2">資格・学会活動</h4>
+                  <h4 className="font-serif text-xl text-primary mb-6 border-b border-border-light pb-2">資格・所属</h4>
                   <ul className="space-y-3 text-sm md:text-base text-text-main leading-loose">
-                    <li>医学博士の学位授与（大阪大学）</li>
+                    <li>日本美容皮膚科学会正会員</li>
+                    <li>日本美容外科学会正会員</li>
+                    <li>日本抗加齢医学会正会員</li>
+                    <li>日本内科学会正会員</li>
                     <li>日本医師会認定産業医</li>
-                    <li>日本内科学会 認定内科医、近畿地方会評議員</li>
-                    <li>日本脳卒中学会 脳卒中専門医、評議員</li>
-                    <li>日本高血圧学会 特別正会員（FJSH）、評議員</li>
-                    <li>日本脳ドック学会 評議員</li>
                   </ul>
                 </div>
               </div>
@@ -688,10 +682,10 @@ export default function App() {
           <div className="flex-shrink-0">
             <img src="https://www.gateway-clinic.com/wp/wp-content/webp-express/webp-images/themes/original_theme/assets/img/common/logo.png.webp" alt="ゲートウェイクリニック大阪梅田" className="h-12 object-contain" />
           </div>
-          <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-xs font-sans text-text-main">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-xs font-serif text-text-main">
             <a href="https://www.gateway-clinic.com/privacy/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">プライバシーポリシー</a>
           </div>
-          <p className="text-xs font-sans text-text-muted">
+          <p className="text-xs font-serif text-text-muted">
             ©︎ゲートウェイクリニック大阪梅田
           </p>
         </div>
