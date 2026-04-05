@@ -21,7 +21,9 @@ const SectionHeading = ({ title, subtitle, className }: { title: string, subtitl
 
 const CTAButton = ({ className, text = "無料相談・初回検査のご予約" }: { className?: string, text?: string }) => (
   <motion.a
-    href="#"
+    href="https://s.lmes.jp/landing-qr/2008627533-zRarQgNd?uLand=CzckSK"
+    target="_blank"
+    rel="noopener noreferrer"
     whileHover={{ scale: 1.02, opacity: 0.95 }}
     className={cn(
       "inline-flex items-center justify-center bg-gradient-to-r from-[#c5a059] via-[#e8c878] to-[#c5a059] text-white py-4 px-10 text-xs md:text-sm tracking-[0.15em] transition-all duration-300 shadow-lg hover:shadow-xl font-medium",
@@ -112,16 +114,21 @@ const BeginnerContent = () => (
         </p>
       </div>
 
-      <div className="md:col-span-2 space-y-8 pt-16 border-t border-border-light text-center max-w-4xl mx-auto">
-        <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-[#c5a059] via-[#e8c878] to-[#c5a059] leading-relaxed py-2">
-          「最高の土壌」に「最高の種」を。<br/>一生、自分の足で歩くための究極のプログラム
+      <div className="bg-white border border-gold/20 p-8 md:p-10 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden group md:col-span-2">
+        <div className="absolute top-0 right-0 w-24 h-24 bg-gold/5 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+        <span className="text-gold font-serif text-4xl block mb-6 opacity-80 border-b-2 border-gold/30 pb-2 inline-block">05</span>
+        <h3 className="text-xl md:text-2xl font-serif text-primary leading-relaxed mb-6">
+          「最高の土壌」に「最高の種」を。一生、自分の足で歩くための究極のプログラム
         </h3>
-        <p className="text-base md:text-lg text-text-main leading-loose">
-          痛みを抑え、土台を整える「Dr.リバイブ」。すり減った組織を修復する「再生医療（幹細胞治療）」。これらを組み合わせた総合治療が、全国でも当院だけで受けられる『切らない膝治療の最新かつ最終かつ最高の到達地点』です。
+        <p className="text-base text-text-main leading-loose">
+          痛みを抑え、土台を整える「Dr.リバイブ」。すり減った組織を修復する「再生医療（幹細胞注射）」。さらに、全身の修復力を若返らせる「幹細胞上清液の点滴」。これらをすべて組み合わせた総合治療が、全国でも当院だけで受けられる『切らない膝治療の最新かつ最終かつ最高の到達地点』です。
         </p>
+      </div>
+
+      <div className="md:col-span-2 space-y-8 pt-16 border-t border-border-light text-center max-w-4xl mx-auto">
         <div className="pt-8">
-          <p className="text-base text-primary font-serif mb-6">まずは、あなたの現状を総合的に診てもらいませんか？</p>
-          <CTAButton text="LINEで無料相談・初回検査を予約する" />
+          <p className="text-base text-primary font-serif mb-6">まずは、あなたの膝の状態を気軽に相談してみませんか？</p>
+          <CTAButton text="LINEで無料相談・ご予約" />
         </div>
       </div>
     </div>
@@ -139,7 +146,7 @@ const ExperiencedContent = () => (
           PRP療法が「期待外れ」に終わってしまった理由。
         </h3>
         <p className="text-base text-text-main leading-loose">
-          PRPなどの注入療法は、ご自身の修復力に頼る治療です。しかし、膝の細胞が「エネルギー切れ（ATP不足）」を起こしていると、どれだけ良い刺激を与えても、細胞は修復作業を始めてくれません。「スイッチが入らない体」に、信号だけを送っても効果は出にくいのです。
+          PRPなどの注入療法は、ご自身の修復力に頼る治療です。しかし、膝の細胞が「細胞の電池切れ（ATP不足）」を起こしていると、どれだけ良い刺激を与えても、細胞は修復作業を始めてくれません。「スイッチが入らない体」に、信号だけを送っても効果は出にくいのです。
         </p>
       </div>
 
@@ -161,7 +168,7 @@ const ExperiencedContent = () => (
           高周波と栄養で、膝の「エネルギー工場」を再起動する。
         </h3>
         <p className="text-base text-text-main leading-loose">
-          軟骨細胞の代謝は、すべて「ミトコンドリア」の働きに依存しています。Dr.リバイブは、高周波で深部からエネルギー（電子）をチャージし、ミトコンドリアを活性化させます。「温かく、エネルギーに満ちた土壌」に整えてから幹細胞を迎える。これが、治療の価値を最大限に引き出す絶対条件です。
+          軟骨細胞の代謝は、すべて「エネルギーを生み出す工場（ミトコンドリア）」の働きに依存しています。Dr.リバイブは、高周波で深部からエネルギー（電子）をチャージし、エネルギーを生み出す工場（ミトコンドリア）を活性化させます。「温かく、エネルギーに満ちた土壌」に整えてから幹細胞を迎える。これが、治療の価値を最大限に引き出す絶対条件です。
         </p>
       </div>
 
@@ -172,7 +179,22 @@ const ExperiencedContent = () => (
           膝を守る「天然のサポーター（筋肉）」を呼び覚ます。
         </h3>
         <p className="text-base text-text-main leading-loose">
-          膝の軟骨障害の多くは、筋肉（大腿四頭筋）が正しく使えていないことが原因です。Dr.リバイブは、眠っている硬くなり癒着した筋肉を「使える状態」へ再起動させます。再生した軟骨を、新しい筋肉が守り続ける。これが「一生歩ける」仕組みです。
+          膝の軟骨障害の多くは、筋肉（大腿四頭筋）が正しく使えていないことが原因です。<br />
+          Dr.リバイブは、痛みや苦労と時間を伴うリハビリなしで、眠っている硬くなり癒着した筋肉を「使える状態」へ再起動させます。<br />
+          再生した軟骨を、新しい筋肉が守り続ける。これが「一生歩ける」仕組みです。
+        </p>
+      </div>
+
+      <div className="bg-white border border-gold/20 p-8 md:p-10 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden group md:col-span-2">
+        <div className="absolute top-0 right-0 w-24 h-24 bg-gold/5 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+        <span className="text-gold font-serif text-4xl block mb-6 opacity-80 border-b-2 border-gold/30 pb-2 inline-block">05</span>
+        <h3 className="text-xl md:text-2xl font-serif text-primary leading-relaxed mb-6">
+          「点（膝）」への注射に加え、「線（全身）」からの点滴で修復力を爆発させる。
+        </h3>
+        <p className="text-base text-text-main leading-loose">
+          当院では、脂肪幹細胞の「局所注射」に加えて、「歯髄幹細胞上清液の全身投与（点滴）」を推奨しています。<br />
+          膝という「現場」を直しながら、血管を通じて「全身の修復システム」を最新状態にアップデートする。<br />
+          この内側と外側からのダブルアプローチが、炎症を抑え、組織の再生を強力に後押しします。
         </p>
       </div>
 
@@ -184,8 +206,8 @@ const ExperiencedContent = () => (
           過去の治療で効果を感じられなかった方こそ、土壌を整える「Dr.リバイブ」と「幹細胞治療」の統合的アプローチが必要です。
         </p>
         <div className="pt-8">
-          <p className="text-base text-primary font-serif mb-6">もう、迷わなくて大丈夫です。最高の状態で再生医療へ進むことをお勧めします。</p>
-          <CTAButton text="LINEで無料相談・初回検査を予約する" />
+          <p className="text-base text-primary font-serif mb-6">まずは、あなたの膝の状態を気軽に相談してみませんか？</p>
+          <CTAButton text="LINEで無料相談・ご予約" />
         </div>
       </div>
     </div>
@@ -282,7 +304,7 @@ export default function App() {
       <section className="relative h-screen min-h-[800px] flex items-center pt-20">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://picsum.photos/seed/doctor-elegant/1920/1080" 
+            src="https://images.unsplash.com/photo-1576091160550-2173ff9e5eb3?auto=format&fit=crop&w=1920&q=80" 
             alt="Doctor in clinic" 
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
@@ -299,8 +321,8 @@ export default function App() {
             className="max-w-3xl"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-primary leading-[1.4] tracking-tight mb-8">
-              膝の再生医療を<br />
-              <span className="text-gold">「一生の宝物」</span>にするために。
+              「手術」か「我慢」か。<br />
+              その2択を終わらせる<span className="text-gold">第3の選択肢</span>
             </h1>
             <p className="text-base md:text-lg text-text-main font-sans leading-loose mb-12 max-w-2xl">
               過去の治療で効果を感じられなかった方へ贈る、細胞の再起動という新常識。<br /><br />
@@ -319,13 +341,13 @@ export default function App() {
             <div className="lg:col-span-6">
               <h3 className="text-2xl font-serif text-primary mb-6">再生医療（幹細胞治療）とは？</h3>
               <p className="text-base text-text-main leading-loose mb-12">
-                人間の体に本来備わっている「自己修復能力」を最大限に引き出す最先端の治療法です。ご自身の脂肪組織から取り出した「間葉系幹細胞」を、厚生労働省届出の専用施設で培養・活性化し、膝関節内に幹細胞での治療を行います。幹細胞の持つ「損傷箇所への集積（ホーミング効果）」により、すり減った軟骨や傷ついた組織の保護・修復・再生を強力に促します。
+                人間の体に本来備わっている「自己修復能力」を最大限に引き出す最先端の治療法です。ご自身の脂肪組織から取り出した「間葉系幹細胞」を、厚生労働省届出の専用施設で培養・活性化し、膝関節内に幹細胞での治療を行います。幹細胞の持つ「傷ついた場所を自動で見つけ出す働き（ホーミング効果）」により、すり減った軟骨や傷ついた組織の保護・修復・再生を強力に促します。
               </p>
             </div>
             <div className="lg:col-span-6">
               <div className="aspect-[4/3] bg-white p-4 shadow-2xl">
                 <img 
-                  src="https://picsum.photos/seed/blue-cell-biology/800/600" 
+                  src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80" 
                   alt="Stem cell therapy" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -343,13 +365,25 @@ export default function App() {
               </p>
             </div>
             <div className="lg:col-span-6 lg:order-1">
-              <div className="aspect-[4/3] bg-white p-4 shadow-2xl">
-                <img 
-                  src="https://picsum.photos/seed/professional-clinic-hospital/800/600" 
-                  alt="Soil concept" 
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
+              <div className="bg-white p-4 shadow-2xl flex flex-col sm:flex-row gap-4">
+                <div className="flex-1 text-center">
+                  <img 
+                    src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?auto=format&fit=crop&w=400&q=80" 
+                    alt="これまでの膝（カチカチの土壌）" 
+                    className="w-full aspect-square object-cover mb-3"
+                    referrerPolicy="no-referrer"
+                  />
+                  <p className="text-sm font-bold text-primary">これまでの膝<br/><span className="text-xs font-normal">（カチカチの土壌）</span></p>
+                </div>
+                <div className="flex-1 text-center">
+                  <img 
+                    src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=400&q=80" 
+                    alt="Dr.リバイブ後の膝（フカフカの土壌）" 
+                    className="w-full aspect-square object-cover mb-3"
+                    referrerPolicy="no-referrer"
+                  />
+                  <p className="text-sm font-bold text-primary">Dr.リバイブ後<br/><span className="text-xs font-normal">（フカフカの土壌）</span></p>
+                </div>
               </div>
             </div>
           </div>
@@ -373,13 +407,16 @@ export default function App() {
               </div>
             </div>
             <div className="lg:col-span-6">
-              <div className="aspect-[4/3] bg-white p-4 shadow-2xl">
+              <div className="aspect-[4/3] bg-white p-4 shadow-2xl relative group">
                 <img 
-                  src="https://picsum.photos/seed/cell-repair-moving/800/600" 
-                  alt="Medical device" 
+                  src="https://images.unsplash.com/photo-1605684954998-685c79d6a018?auto=format&fit=crop&w=800&q=80" 
+                  alt="温かい高周波治療の様子" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
+                <div className="absolute inset-4 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                  <p className="text-white font-bold text-sm md:text-base">心地よい温かさで深部からほぐす施術風景</p>
+                </div>
               </div>
             </div>
           </div>
@@ -408,7 +445,7 @@ export default function App() {
           <div className="grid md:grid-cols-3 gap-12 mt-16">
             <div className="space-y-6">
               <div className="aspect-square bg-white p-2 shadow-lg mb-6">
-                <img src="https://picsum.photos/seed/clinic-management/600/600" alt="Management" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="Management" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <h3 className="text-xl font-serif text-primary">法に準拠した管理体制</h3>
               <p className="text-sm text-text-main leading-loose">
@@ -417,7 +454,7 @@ export default function App() {
             </div>
             <div className="space-y-6">
               <div className="aspect-square bg-white p-2 shadow-lg mb-6">
-                <img src="https://picsum.photos/seed/cell-culture/600/600" alt="Cell Culture" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80" alt="Cell Culture" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <h3 className="text-xl font-serif text-primary">高度な細胞培養加工施設</h3>
               <p className="text-sm text-text-main leading-loose">
@@ -426,7 +463,7 @@ export default function App() {
             </div>
             <div className="space-y-6">
               <div className="aspect-square bg-white p-2 shadow-lg mb-6">
-                <img src="https://picsum.photos/seed/medical-safety/600/600" alt="Safety" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src="https://images.unsplash.com/photo-1584516150909-c43483ee7932?auto=format&fit=crop&w=600&q=80" alt="Safety" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <h3 className="text-xl font-serif text-primary">副作用・リスク</h3>
               <p className="text-sm text-text-main leading-loose">
@@ -493,7 +530,7 @@ export default function App() {
             {[
               { title: "ご相談・正確な診断", desc: "寳學院長による問診と診察。現状の膝や全身の細胞・血流の状況を正確に把握し、最善の治療方針を決定します。" },
               { title: "術前検査・Dr.リバイブ", desc: "感染症等の血液検査と並行し、Dr.リバイブによる「土壌作り（高周波加温・栄養指導）」を開始します。" },
-              { title: "脂肪採取", desc: "下腹部を2cmほど切開し、局所麻酔下で1〜2gの脂肪を採取します（所要時間約20分）。" },
+              { title: "脂肪採取", desc: "下腹部を2cmほど切開し、局所麻酔下で1〜2gの脂肪を採取します（所要時間約20分）。傷跡はほとんど目立たず、局所麻酔を使用するため痛みも最小限です。絆創膏を貼る程度で、もちろんその日のうちに歩いてご帰宅いただけます。" },
               { title: "細胞培養", desc: "厚生労働省届出の専用施設にて、約4〜6週間かけて高品質な幹細胞へ培養・増殖させます。" },
               { title: "治療（投与）", desc: "最適な状態に整った膝関節内へ、培養した幹細胞を注射により投与します。" },
               { title: "経過観察", desc: "投与から1, 3, 6, 12カ月を目安に、効果の確認と細胞の定着をサポートするための診察を行います。" }
@@ -632,10 +669,16 @@ export default function App() {
 
       {/* Final CTA */}
       <section className="py-40 md:py-56 bg-bg-white text-center px-6">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-primary leading-relaxed mb-16">
-          一生、自分の足で歩くための<br/>
-          <span className="text-gold">究極のプログラム</span>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-primary leading-relaxed mb-12">
+          「最高の土壌」に「最高の種」を。<br/>
+          <span className="text-gold">一生、自分の足で歩くための究極のプログラム</span>
         </h2>
+        <p className="text-base md:text-lg text-text-main leading-loose max-w-4xl mx-auto mb-16">
+          痛みを抑え、土台を整える「Dr.リバイブ」。<br className="hidden md:block" />
+          すり減った組織を修復する「再生医療（幹細胞注射）」。<br className="hidden md:block" />
+          さらに、全身の修復力を若返らせる「幹細胞上清液の点滴」。<br className="hidden md:block" />
+          これらをすべて組み合わせた総合治療が、全国でも当院だけで受けられる『切らない膝治療の最新かつ最終かつ最高の到達地点』です。
+        </p>
         <CTAButton className="mb-12" />
       </section>
 
@@ -646,9 +689,7 @@ export default function App() {
             <img src="https://www.gateway-clinic.com/wp/wp-content/webp-express/webp-images/themes/original_theme/assets/img/common/logo.png.webp" alt="ゲートウェイクリニック大阪梅田" className="h-12 object-contain" />
           </div>
           <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-xs font-sans text-text-main">
-            <a href="#" className="hover:text-primary transition-colors">プライバシーポリシー</a>
-            <a href="#" className="hover:text-primary transition-colors">免責事項</a>
-            <a href="#" className="hover:text-primary transition-colors">運営法人情報</a>
+            <a href="https://www.gateway-clinic.com/privacy/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">プライバシーポリシー</a>
           </div>
           <p className="text-xs font-sans text-text-muted">
             ©︎ゲートウェイクリニック大阪梅田
