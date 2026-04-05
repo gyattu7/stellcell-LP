@@ -311,18 +311,26 @@ export default function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[800px] flex items-center pt-20">
-        <div className="absolute inset-0 z-0 bg-white">
-          <img 
-            src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?auto=format&fit=crop&w=1920&q=80" 
-            alt="Clean White Luxury Background" 
-            className="w-full h-full object-cover object-center opacity-60"
-            referrerPolicy="no-referrer"
-          />
-          {/* 白をベースにしつつ、文字の視認性を極限まで高めるグラデーション */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/30" />
-          {/* ほんのりとゴールドの光を差し込ませて高級感を演出 */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(197,160,89,0.15),transparent_60%)]" />
+      <section className="relative h-screen min-h-[800px] flex items-center pt-20 overflow-hidden bg-[#F8F7F4]">
+        <div className="absolute inset-0 z-0">
+          {/* Base gradient to ensure text readability on the left */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/70 to-transparent z-10" />
+          
+          {/* Light rays container */}
+          <div className="absolute inset-0 z-0">
+            {/* Diagonal light beam 1 */}
+            <div className="absolute -top-[20%] right-[10%] w-[40%] h-[150%] bg-gradient-to-bl from-white via-white/50 to-transparent transform -rotate-[30deg] blur-2xl opacity-90" />
+            
+            {/* Diagonal light beam 2 (Golden) */}
+            <div className="absolute -top-[10%] right-[-5%] w-[50%] h-[150%] bg-gradient-to-bl from-gold/20 via-gold/5 to-transparent transform -rotate-[25deg] blur-3xl" />
+            
+            {/* Diagonal light beam 3 */}
+            <div className="absolute top-[10%] right-[20%] w-[30%] h-[120%] bg-gradient-to-bl from-white via-white/30 to-transparent transform -rotate-[35deg] blur-xl opacity-70" />
+            
+            {/* Ambient glow */}
+            <div className="absolute top-[15%] right-[15%] w-[600px] h-[600px] bg-white rounded-full blur-[120px] opacity-80" />
+            <div className="absolute bottom-[20%] right-[-10%] w-[500px] h-[500px] bg-gold/15 rounded-full blur-[100px]" />
+          </div>
         </div>
         
         <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 w-full">
@@ -330,11 +338,11 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="max-w-3xl"
+            className="max-w-full lg:max-w-5xl"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-primary leading-[1.4] tracking-tight mb-8">
+            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] xl:text-6xl font-serif text-primary leading-[1.4] tracking-tight mb-8">
               「手術」か「我慢」か。<br />
-              その2択を終わらせる<span className="text-gold">第3の選択肢</span>
+              その２択を終わらせる<span className="text-gold">第３の選択肢</span>
             </h1>
             <p className="text-base md:text-lg text-text-main font-serif leading-loose mb-12 max-w-2xl">
               過去の治療で効果を感じられなかった方へ贈る、細胞の再起動という新常識。<br /><br />
@@ -409,7 +417,7 @@ export default function App() {
             <div className="lg:col-span-6">
               <div className="aspect-video bg-white p-4 shadow-2xl">
                 <img 
-                  src="https://gateway-clinic.com/lpimg/contents06.png" 
+                  src="https://gateway-clinic.com/lpimg/contents08.png" 
                   alt="Dr.リバイブによる「根本からの再起動」" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
